@@ -22,7 +22,7 @@ As a system administrator I want to be able to add new user to a authorization s
 2. Identify which tests on which level to implement (UI/Integration/Unit, for instance). Explain - why
 3. Implement suggested autotests. (note - should you decide add some UI autotest - you need to create some kind of a framework for that
 with proper architecture)
-4. Create Pull request with implemented autotests (add suggested tests and description for them into description)
+4. Create zip  with implemented autotests (add suggested tests and description for them into description)
 5. Expected result: excel/google doc/work/etc where test scenarios, automation level, comments "Why" you decided that this scenario is necessary and reason why you selected this automation level.
 6. send pull request link and docs from step 5 to emails that were provided with this link
 
