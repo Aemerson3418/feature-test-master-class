@@ -24,7 +24,7 @@ As a system administrator I want to be able to add new user to a authorization s
 with proper architecture)
 4. Create zip  with implemented autotests (add suggested tests and description for them into description)
 5. Expected result: excel/google doc/work/etc where test scenarios, automation level, comments "Why" you decided that this scenario is necessary and reason why you selected this automation level.
-6. send pull request link and docs from step 5 to emails that were provided with this link
+6. send zip and docs from step 5 to emails that were provided with this link
 
 Note:
 All questions could bу sent to apushkarev@workfusion.com
