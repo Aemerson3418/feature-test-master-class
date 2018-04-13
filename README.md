@@ -27,4 +27,4 @@ with proper architecture)
 6. send zip and docs from step 5 to emails that were provided with this link
 
 Note:
-All questions could bу sent to apushkarev@workfusion.com
+All questions could bу sent to vsokolovski@workfusion.com
