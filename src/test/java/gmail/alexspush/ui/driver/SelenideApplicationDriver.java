@@ -3,7 +3,6 @@ package gmail.alexspush.ui.driver;
 
 import com.codeborne.selenide.Configuration;
 
-import static com.codeborne.selenide.Selenide.close;
 import static com.codeborne.selenide.Selenide.open;
 
 /**
@@ -19,9 +18,5 @@ public class SelenideApplicationDriver {
         Configuration.browser = "chrome";
 
         open(APPLICATION_URL);
-    }
-
-    public void closeApplication() {
-        close();
     }
 }
