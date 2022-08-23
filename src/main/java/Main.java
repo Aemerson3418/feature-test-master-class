@@ -1,7 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
 
-import business.User;
 import business.service.UserService;
 import org.eclipse.jetty.util.MultiMap;
 import org.eclipse.jetty.util.UrlEncoded;
@@ -12,19 +11,17 @@ import spark.template.freemarker.FreeMarkerEngine;
 
 import static spark.Spark.get;
 import static spark.Spark.post;
-import static spark.Spark.redirect;
 import static spark.Spark.staticFiles;
 
 /**
  * Created by Alexander Pushkarev.
- *
+ * <p>
  * 15.2.18
  */
 public class Main {
 
-    private static IUserRepository repository = new InMemoryUserRepository();
-    private static UserService service = new UserService();
-
+    private static final IUserRepository repository = new InMemoryUserRepository();
+    private static final UserService service = new UserService();
 
     public static void main(String[] args) {
         service.setUserRepository(repository);
@@ -40,14 +37,13 @@ public class Main {
             MultiMap<String> params = new MultiMap<>();
             UrlEncoded.decodeTo(req.body(), params, "UTF-8");
 
-
             Map<String, Object> model = new HashMap<>();
             model.put("status",
                     service.addUser(
                             params.getString("username"),
                             params.getString("name"),
                             params.getString("password")
-                            )
+                    )
             );
             model.put("users", service.getUserInfoList());
             return new FreeMarkerEngine().render(new ModelAndView(model, "index.ftl"));
